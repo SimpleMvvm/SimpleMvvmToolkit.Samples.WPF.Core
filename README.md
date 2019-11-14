@@ -1,0 +1,1 @@
+# SimpleMvvmToolkit.Samples.WPF.Core
