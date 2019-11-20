@@ -5,9 +5,8 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:SimpleMvvmToolkit.Samples.WPF.Core"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
-    <StackPanel>
+        Title="Main Window" Height="300" Width="525">
+    <StackPanel Name="Panel">
         <TextBlock Text="{Binding Path=BannerText}" FontFamily="Verdana" FontSize="18" FontWeight="Bold" HorizontalAlignment="Center" Margin="0,0,0,10" />
-        <!--<views:CustomerView />-->
     </StackPanel>
 </Window>
