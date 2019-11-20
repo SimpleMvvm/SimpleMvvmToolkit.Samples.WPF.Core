@@ -1,4 +1,6 @@
 ﻿using System.Windows;
+using SimpleMvvmToolkit.Samples.WPF.Core.ViewModels;
+using SimpleMvvmToolkit.Samples.WPF.Core.Views;
 
 namespace SimpleMvvmToolkit.Samples.WPF.Core
 {
@@ -7,9 +9,11 @@ namespace SimpleMvvmToolkit.Samples.WPF.Core
     /// </summary>
     public partial class MainWindow : Window
     {
-        public MainWindow()
+        public MainWindow(MainPageViewModel viewModel, CustomerView customerView)
         {
+            DataContext = viewModel;
             InitializeComponent();
+            Panel.Children.Add(customerView);
         }
     }
 }
